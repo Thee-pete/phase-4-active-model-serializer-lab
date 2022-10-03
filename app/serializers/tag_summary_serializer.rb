@@ -1,4 +1,4 @@
 class TagSummarySerializer < ActiveModel::Serializer
   attributes :name
-  belongs_to :post, serializer: PostSummarySerializer
+  has_many :posts, serializer: PostSummarySerializer
 end
